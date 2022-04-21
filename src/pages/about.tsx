@@ -2,8 +2,13 @@ import React from "react"
 
 import { Link } from "gatsby"
 
+import Layout from "../components/layout"
+import Seo from "../components/seo"
+
 const AboutPage = () => (
-  <>
+  <Layout>
+    <Seo title="About" />
+
     <h1>About</h1>
 
     <ul>
@@ -17,7 +22,7 @@ const AboutPage = () => (
         </Link>
       </li>
     </ul>
-  </>
+  </Layout>
 )
 
 export default AboutPage
