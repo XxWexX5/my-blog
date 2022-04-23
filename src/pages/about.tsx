@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Link } from "gatsby"
+import { Link, StaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Seo from "../components/seo"
@@ -22,6 +22,35 @@ const AboutPage = () => (
         </Link>
       </li>
     </ul>
+
+    <StaticQuery
+      query={graphql`
+        {
+          site {
+            siteMetadata {
+              title
+              description
+              author
+              siteUrl
+            }
+          }
+        }
+      `}
+      render={({
+        site: {
+          siteMetadata: { title, description, author, siteUrl },
+        },
+      }) => (
+        <div className="wrapper-info-page">
+          <h2>{title}</h2>
+          <p>{description}</p>
+          <p>{author}</p>
+          <Link to={siteUrl} target="_blank">
+            {siteUrl}
+          </Link>
+        </div>
+      )}
+    />
   </Layout>
 )
 
