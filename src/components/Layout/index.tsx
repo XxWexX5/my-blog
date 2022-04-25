@@ -4,15 +4,13 @@ import PropTypes from "prop-types"
 import GlobalStyled from "../../styles/global-styles"
 import * as Styled from "./styles"
 
-import Profile from "../Profile"
+import Sidebar from "../Sidebar"
 
 const Layout = ({ children }) => {
   return (
     <>
       <Styled.LayoutWrapper>
-        <aside>
-          <Profile />
-        </aside>
+        <Sidebar />
         <Styled.LayoutMain>{children}</Styled.LayoutMain>
       </Styled.LayoutWrapper>
 

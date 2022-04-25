@@ -8,6 +8,7 @@ export const ProfileWrapper = styled.section`
   flex-direction: column;
 `
 export const ProfileLink = styled(Link)`
+  color: #8899a6;
   font-size: 1.6rem;
   text-decoration: none;
   transition: color 0.5s;
