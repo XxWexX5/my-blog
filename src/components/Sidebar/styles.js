@@ -1,6 +1,9 @@
 import styled from "styled-components"
 
 export const SidebarWrapper = styled.aside`
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 20rem;
   height: 100vh;
   display: flex;
