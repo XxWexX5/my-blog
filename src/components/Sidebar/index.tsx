@@ -1,14 +1,16 @@
 import React from "react"
 
 import Profile from "../Profile"
-import SocialLink from "../SocialLinks"
+import SocialLinks from "../SocialLinks"
+import MenuLinks from "../MenuLinks"
 
 import * as Styled from "./styles"
 
 const Sidebar = () => (
   <Styled.SidebarWrapper>
     <Profile />
-    <SocialLink />
+    <SocialLinks />
+    <MenuLinks />
   </Styled.SidebarWrapper>
 )
 

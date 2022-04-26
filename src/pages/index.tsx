@@ -9,18 +9,6 @@ const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <h1>Home</h1>
-
-    <ul>
-      <li>
-        <Link to="/" activeStyle={{ color: "#B22B27" }}>
-          Home
-        </Link>
-      </li>
-
-      <li>
-        <Link to="/about">About</Link>
-      </li>
-    </ul>
   </Layout>
 )
 

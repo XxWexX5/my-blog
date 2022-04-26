@@ -28,27 +28,6 @@ const AboutPage = () => {
       <Seo title="About" />
 
       <h1>About</h1>
-
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-
-        <li>
-          <Link to="/about" activeStyle={{ color: "#B22B27" }}>
-            About
-          </Link>
-        </li>
-      </ul>
-
-      <div className="wrapper-info-page">
-        <h2>{title}</h2>
-        <p>{description}</p>
-        <p>{author}</p>
-        <Link to={siteUrl} target="_blank">
-          {siteUrl}
-        </Link>
-      </div>
     </Layout>
   )
 }
