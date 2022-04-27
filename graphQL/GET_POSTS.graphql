@@ -15,7 +15,7 @@ fragment POST on MarkdownRemark {
     category
     title
     description
-    date
+    date(locale: "pt-br", formatString: "DD [de] MMMM YYYY")
     background
   }
 }
