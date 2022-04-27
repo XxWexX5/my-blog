@@ -1,7 +1,7 @@
 ---
 date: 2015-01-03 05:54:23
-title: Two things are infinite
-description: And I'm not sure about the universe.
+title: Lorem Ipsum
+description: Lorem Lorem
 category: Misc
 background: "#7AAB13"
 ---

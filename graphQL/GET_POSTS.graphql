@@ -1,0 +1,21 @@
+query GET_POSTS {
+  markdown: allMarkdownRemark {
+    posts: edges {
+      post: node {
+        ...POST
+      }
+    }
+  }
+}
+
+fragment POST on MarkdownRemark {
+  id
+  timeToRead
+  frontmatter {
+    category
+    title
+    description
+    date
+    background
+  }
+}
