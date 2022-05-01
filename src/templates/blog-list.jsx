@@ -8,8 +8,6 @@ import PostItem from "../components/PostItem"
 const BlogList = props => {
   const postList = props.data.markdown.posts
 
-  console.log(props)
-
   return (
     <Layout>
       <Seo title="Home" />
