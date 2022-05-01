@@ -11,7 +11,9 @@ const IndexPage = () => {
     markdown: { posts },
   } = useStaticQuery(graphql`
     query GET_POSTS {
-      markdown: allMarkdownRemark {
+      markdown: allMarkdownRemark(
+        sort: { order: DESC, fields: frontmatter___date }
+      ) {
         posts: edges {
           post: node {
             ...POST
