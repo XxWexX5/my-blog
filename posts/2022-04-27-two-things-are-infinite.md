@@ -4,6 +4,7 @@ title: Lorem Ipsum
 description: Lorem Lorem
 category: Misc
 background: "#7AAB13"
+slug: two-things-are-infinite
 ---
 
 # Lorem ipsum
