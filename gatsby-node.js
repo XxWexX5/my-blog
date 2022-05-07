@@ -51,7 +51,7 @@ exports.createPages = async function ({ actions, graphql }) {
 
     actions.createPage({
       path: slug,
-      component: path.resolve(`./src/templates/blog-post.jsx`),
+      component: path.resolve(`./src/template/blog-post.jsx`),
       context: { slug: slug },
     })
   })
@@ -62,7 +62,7 @@ exports.createPages = async function ({ actions, graphql }) {
   Array.from({ length: numPages }).forEach((_, index) => {
     actions.createPage({
       path: index === 0 ? "/" : `/page/${index + 1}`,
-      component: path.resolve(`./src/templates/blog-list.jsx`),
+      component: path.resolve(`./src/template/blog-list.jsx`),
       context: {
         limit: postsPerPage,
         skip: index * postsPerPage,
